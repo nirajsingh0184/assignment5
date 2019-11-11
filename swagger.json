@@ -1,0 +1,82 @@
+{
+    "swagger": "2.0",
+    "info": {
+    "version": "1.0.0",
+    "description": "swagger REST API with CRUD",
+    "title": "CRUD REST API"
+    },
+    "host": "localhost:8000",
+    "basePath": "/",
+    "schemes": [
+    "http"
+    ],
+    "paths": {
+    
+    "/register":{
+    "post":{
+    "description":"this is validation section",
+    "parameters":[
+
+    {
+    "in":"formData",
+    "name":"name",
+    "required":"true"
+    
+    },
+    
+    {
+    "in":"formData",
+    "name":"email",
+    "required":"true"
+    
+    },
+    {
+    "in":"formData",
+    "name":"password",
+    "required":"true"
+    
+    },
+            {
+                "in":"formData",
+                "name":"Type",
+                "required":"true"
+                
+                }
+    ]
+    }
+    },
+    "/login":{
+    "post":{
+    "description":"this is validation section",
+    "parameters":[
+    {
+    "in":"formData",
+    "name":"email",
+    "required":"true"
+    
+    },
+    
+    {
+    "in":"formData",
+    "name":"password",
+    "required":"true"
+    
+    },
+    {
+        "in":"formData",
+        "name":"Type",
+        "required":"true"
+        
+        }
+    
+    ]
+    }
+    }
+    
+    
+    
+    
+    
+    
+    }
+    }
